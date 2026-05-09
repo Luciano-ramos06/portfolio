@@ -1,0 +1,136 @@
+---
+import BackendSuplementos from "@/assets/BackendSuplementos.webp";
+import FrontendSuplementos from "@/assets/FrontendSuplementos.webp";
+import TuProfeEnQr from "@/assets/TuProfeEnQr.webp";
+
+import {Image} from 'astro:assets';
+---
+<section id="projects" class="py-24 px-6 z-0 relative">
+      <div class="max-w-5xl mx-auto">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-200 mb-14 text-start">
+          Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <div class="flex flex-col group rounded-md border border-black-200 overflow-hidden shadow-sm hover:shadow-lg transition h-[440px] shadow-2xl shadow-black">
+                      
+
+            <div class="h-48 bg-gray-200 text-black">
+                <Image src={BackendSuplementos} alt="Project preview" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="p-4 flex flex-col flex-1 border-t">
+              <h3 class="text-xl font-semibold text-neutral-200 mb-2">
+                Backend Suplementos
+              </h3>
+
+              <p class="text-neutral-300 text-sm mb-auto">
+                Supplement Store backend application
+              </p>
+
+              <div class="flex flex-row gap-4">
+                <a
+                href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm font-medium bg-sky-950 text-white border border-black px-4 py-2 rounded hover:text-amber-600 transition">
+                
+                </a>
+
+                <div class="flex flex-row gap-3">
+                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
+                    Typescript
+                  </a>
+
+                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
+                    Docker
+                  </a>
+                </div>
+                
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="flex flex-col group rounded-md border border-black-200 overflow-hidden shadow-sm hover:shadow-lg transition h-[440px] shadow-2xl shadow-black">
+
+
+            <div class="h-48 bg-gray-200 text-black">
+                <Image src={FrontendSuplementos} alt="Project preview" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="p-4 flex flex-col flex-1 border-t">
+              <h3 class="text-xl font-semibold text-neutral-200 mb-2">
+                Frontend Suplementos
+              </h3>
+
+              <p class="text-neutral-300 text-sm mb-auto">
+                Supplement Store frontend application
+              </p>
+
+              <div class="flex flex-row gap-4">
+                <a
+                href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm font-medium bg-sky-950 text-white border border-black px-4 py-2 rounded hover:text-amber-600 transition">
+                
+                </a>
+
+                <div class="flex flex-row gap-3">
+                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
+                    Typescript
+                  </a>
+
+                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
+                    Docker
+                  </a>
+                </div>
+                
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="flex flex-col group rounded-md border border-black-200 overflow-hidden shadow-sm hover:shadow-lg transition h-[440px] shadow-2xl shadow-black">
+
+
+            <div class="h-48 bg-gray-200 text-black">
+                <Image src={TuProfeEnQr} alt="Project preview" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="p-4 flex flex-col flex-1 border-t">
+              <h3 class="text-xl font-semibold text-neutral-200 mb-2">
+                Tu Profe en QR
+              </h3>
+
+              <p class="text-neutral-300 text-sm mb-auto">
+                Web application to share gym routines where people scan the page with a QR code.
+              </p>
+
+              <div class="flex flex-row gap-4">
+                <a
+                href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm font-medium bg-sky-950 text-white border border-black px-4 py-2 rounded hover:text-amber-600 transition">
+                
+                </a>
+
+                <div class="flex flex-row gap-3">
+                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
+                    PHP
+                  </a>
+
+                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
+                    CSS
+                  </a>
+                </div>
+                
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+</section>
