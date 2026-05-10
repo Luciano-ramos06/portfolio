@@ -4,150 +4,103 @@ import FrontendSuplementos from "@/assets/FrontendSuplementos.webp";
 import TuProfeEnQr from "@/assets/TuProfeEnQr.webp";
 import { Icon } from 'astro-icon/components';
 import {Image} from 'astro:assets';
+import { TimePrecision } from "astro:schema";
 ---
 <section id="projects" class="py-24 px-6 z-0 relative">
-      <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col max-w-6xl mx-auto">
 
-        <h2 class="text-3xl font-bold text-neutral-200 mb-14 text-start">
-          Projects
-        </h2>
+        <h2 class="text-3xl font-bold text-neutral-200 mb-12">Projects</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-
-          <div class="flex flex-col group rounded-md border border-black-200 overflow-hidden shadow-sm hover:shadow-lg transition h-[440px] shadow-2xl shadow-black">
-                      
-
-            <div class="h-48 bg-gray-200 text-black">
-                <Image src={BackendSuplementos} alt="Project preview" class="w-full h-full object-cover" />
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="flex flex-col gap-4 border-solid border-2 border-neutral-300 rounded-lg p-2">
+            <h2 class="text-xl font-bold text-neutral-200">Suplementos Deportivos Api</h2>
+            <div class="h-64 overflow-hidden rounded-lg">
+              <Image src={BackendSuplementos} alt="Proyecto 1" class="w-full h-full object-cover shadow-md"/>
             </div>
+            <p class="mt-2 text-neutral-300">Backend de eCommerce desarrollado en equipo como parte del proyecto final integrador de la carrera universitaria, con enfoque en escalabilidad y buenas prácticas. El sistema gestiona usuarios, productos, categorías, carrito, órdenes y reseñas mediante una API REST.</p>
+            <div class="text-neutral-300 flex items-center gap-2 mt-auto">
+              <a href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer">
+                <Icon name="mdi:github" class="text-2xl hover:text-amber-400 transition"/>
+              </a>
 
-            <div class="p-4 flex flex-col flex-1 border-t">
-              <h3 class="text-xl font-semibold text-neutral-200 mb-2">
-                Suplementos-Deportivos-Api
-              </h3>
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Typescript
+              </a>
 
-              <p class="text-neutral-300 text-sm mb-auto">
-                Supplement Store backend application
-              </p>
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  PostgreSQL
+              </a>
 
-              <div class="flex flex-row gap-4">
-                <div class="flex flex-row gap-3 justify-center">
-                  <a
-                  href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer"
-                  class="flex items-center gap-2 text-base bg-sky-950 text-white border border-black px-4 py-2 rounded hover:text-amber-600 transition">
-                    <Icon name="mdi:github" />
-                  </a>
-                </div>
-                
-                <div class="flex flex-row gap-1 flex-wrap">
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    Typescript
-                  </a>
-
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    Docker
-                  </a>
-                </div>
-                
-              </div>
-              
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Docker
+              </a>
             </div>
-
           </div>
 
-          <div class="flex flex-col group rounded-md border border-black-200 overflow-hidden shadow-sm hover:shadow-lg transition h-[440px] shadow-2xl shadow-black">
-
-
-            <div class="h-48 bg-gray-200 text-black">
-                <Image src={FrontendSuplementos} alt="Project preview" class="w-full h-full object-cover" />
+          <div class="flex flex-col gap-4 border-solid border-2 border-neutral-300 rounded-lg p-2">
+            <h2 class="text-xl font-bold text-neutral-200">Suplementos Deportivos Web</h2>
+            <div class="h-64 overflow-hidden rounded-lg">
+              <Image src={FrontendSuplementos} alt="Proyecto 2" class="w-full h-full object-cover shadow-md"/>
             </div>
+            <p class="mt-2 text-neutral-300">Frontend de eCommerce desarrollado en equipo como parte del proyecto final integrador de la carrera universitaria, con enfoque en escalabilidad y buenas prácticas. El sistema permite a los usuarios navegar por productos, agregarlos al carrito y realizar compras.</p>
+            <div class="text-neutral-300 flex items-center gap-2 mt-auto">
+              <a href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer">
+                <Icon name="mdi:github" class="text-2xl hover:text-amber-400 transition"/>
+              </a>
 
-            <div class="p-4 flex flex-col flex-1 border-t">
-              <h3 class="text-xl font-semibold text-neutral-200 mb-2">
-                Suplementos-Deportivos-Web
-              </h3>
+              <a href="https://frontend-suplementos-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs text-center hover:text-amber-400 transition border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Ver Pagina
+              </a>
 
-              <p class="text-neutral-300 text-sm mb-auto">
-                Supplement Store frontend application
-              </p>
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Typescript
+              </a>
 
-              <div class="flex flex-row gap-4">
-                <div class="flex flex-row gap-3 justify-center">
-                  <a
-                  href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer"
-                  class="flex items-center gap-2 text-base bg-sky-950 text-white border border-black px-4 py-2 rounded hover:text-amber-600 transition">
-                    <Icon name="mdi:github" />
-                  </a>
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Tailwind
+              </a>
 
-                  <a href="https://frontend-suplementos-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                      Deploy
-                  </a>
-                </div>
-                
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  React
+              </a>
 
-                <div class="flex flex-row gap-1 flex-wrap">
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    Typescript
-                  </a>
-
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    React
-                  </a>
-
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    Docker
-                  </a>
-                </div>
-                
-              </div>
-              
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Docker
+              </a>
             </div>
-
           </div>
 
-          <div class="flex flex-col group rounded-md border border-black-200 overflow-hidden shadow-sm hover:shadow-lg transition h-[440px] shadow-2xl shadow-black">
-
-
-            <div class="h-48 bg-gray-200 text-black">
-                <Image src={TuProfeEnQr} alt="Project preview" class="w-full h-full object-cover" />
+          <div class="flex flex-col gap-4 border-solid border-2 border-neutral-300 rounded-lg p-2">
+            <h2 class="text-xl font-bold text-neutral-200">Tu Profe En QR</h2>
+            <div class="h-64 overflow-hidden rounded-lg">
+              <Image src={TuProfeEnQr} alt="Proyecto 2" class="w-full h-full object-cover shadow-md"/>
             </div>
+            <p class="mt-2 text-neutral-300">Sitio web desarrollado con PHP que lista los ejercicios disponibles en las pistas de salud de Bahía Blanca. La página permite a los usuarios visualizar los ejercicios y sus características.</p>
+            <div class="text-neutral-300 flex items-center gap-2 mt-auto">
+              <a href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer">
+                <Icon name="mdi:github" class="text-2xl hover:text-amber-400 transition"/>
+              </a>
 
-            <div class="p-4 flex flex-col flex-1 border-t">
-              <h3 class="text-xl font-semibold text-neutral-200 mb-2">
-                Tu Profe en QR
-              </h3>
+              <a href="https://tuprofeenqr.page.gd/public/home" target="_blank" rel="noopener noreferrer" class="text-xs text-center hover:text-amber-400 transition border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Ver Pagina
+              </a>
 
-              <p class="text-neutral-300 text-sm mb-auto">
-                Web application to share gym routines where people scan the page with a QR code.
-              </p>
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Typescript
+              </a>
 
-              <div class="flex flex-row gap-4">
-                <div class="flex flex-row gap-3 justify-center">
-                  <a
-                  href="https://github.com/FrancoPanzone/Backend-BD-TP-Integrador" target="_blank" rel="noopener noreferrer"
-                  class="flex items-center gap-2 text-base bg-sky-950 text-white border border-black px-4 py-2 rounded hover:text-amber-600 transition">
-                    <Icon name="mdi:github" />
-                  </a>
-                  <a href="https://tuprofeenqr.page.gd/public/home" target="_blank" rel="noopener noreferrer" class="p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                      Deploy
-                  </a>
-                </div>
-                
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Tailwind
+              </a>
 
-                <div class="flex flex-row gap-1 flex-wrap">
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    PHP
-                  </a>
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  React
+              </a>
 
-                  <a class="select-none p-1 bg-sky-950 flex items-center text-white text-xs border border-black rounded-md hover:text-amber-600 transition">
-                    CSS
-                  </a>
-                </div>
-                
-              </div>
-              
+              <a class="text-xs text-center hover:text-amber-400 transition cursor-default border-solid border-1 border-neutral-300 px-2 py-1 rounded-lg">
+                  Docker
+              </a>
             </div>
-
           </div>
 
         </div>
